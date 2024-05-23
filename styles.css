@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header#MainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1fa7f;
+    padding: 30px;
+    position: relative;
+}
+
+header#MainTitle h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #038d0a;
+}
+
+header#MainTitle img#logo {
+    position: absolute;
+    right: 20px;
+    width: 70px; /* Adjust this value to increase the logo size */
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero .btn.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.hero .btn.default {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.generator {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.generator h2 {
+    font-size: 2em;;
+    margin-bottom: 10px;
+}
+
+.generator p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.generator .btn.blue {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.generated-content {
+    margin-top: 20px;
+    display: none;
+}
+
+.generated-content img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.generated-content p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.album {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.album h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.album p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-group .btn.blue {
+    background-color: #007bff;
+}
+
+.button-group .btn.red {
+    background-color: #dc3545;
+}
+
+.button-group .btn.green {
+    background-color: #28a745;
+}
+
+.button-group .btn.yellow {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.button-group .btn.orange {
+    background-color: #fd7e14;
+}
+
+.button-group .btn.purple {
+    background-color: #6f42c1;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.thumbnail {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+}
+
+.thumbnail img {
+    align-content: center;
+    width: 300px;
+    max-height: 150px;
+    border-radius: 8px;
+}
+
+.thumbnail p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.thumbnail .buttons {
+    margin-top: 10px;
+    display: flex;
+    justify: content 10px;;
+}
+
+.thumbnail .buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Additional styles for button colors */
+.thumbnail .buttons .btn-blue {
+    color: #0c0c0c;
+}
+
+.thumbnail .buttons .btn-red {
+    color: #0c0c0c;
+}
+
+.thumbnail .buttons .btn-green {
+    color: #0c0c0c;
+}
+
+.thumbnail .buttons .btn-yellow {
+    color: #333;
+}
+
+#word-cloud-section {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#word-cloud-section h1 {
+    margin-bottom: 20px;
+}
+
+#text-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.generatebutton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#word-cloud {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
