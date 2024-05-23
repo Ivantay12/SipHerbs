@@ -1,0 +1,10 @@
+.generated-content {
+    margin-top: 20px;
+    display: none;
+}
+
+.generated-content p {
+    margin-top: 10px;
+    font-size: 2em;
+    color: #333;
+}

@@ -1,7 +1,6 @@
 document.getElementById('generateButton').addEventListener('click', function() {
     const content = document.getElementById('generatedContent');
     content.innerHTML = `
-        <img src="beer-image.png" alt="Beer Bottle">
         <p>"Angmoh Liang Teh" Beer</p>
     `;
     content.style.display = 'block';
