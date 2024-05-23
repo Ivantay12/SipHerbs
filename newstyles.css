@@ -1,10 +1,24 @@
+.generator h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.generator p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.generator .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .generated-content {
     margin-top: 20px;
     display: none;
-}
-
-.generated-content p {
-    margin-top: 10px;
-    font-size: 2em;
-    color: #333;
 }

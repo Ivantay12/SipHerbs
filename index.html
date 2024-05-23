@@ -33,16 +33,16 @@
   
   <div class="generator">
     <div class="p-5 text-center bg-body-tertiary rounded-3">
-      <h1 class="fw">Alamak! Spoilt for choice?</h1>
-      <p class="col-lg-8 mx-auto fs-5 text-muted">
-        Just want to quench your taste during a hot day? Simply click on our generator to find out what to drink?
-      </p>
-      <div class="d-inline-flex gap-2 mb-5">
-        <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" id="generateButton">
-            What should I drink today?
-        </button>
-        <div class="generated-content" id="generatedContent"></div>
-      </div>
+        <h1 class="fw">Alamak! Spoilt for choice?</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+            Just want to quench your taste during a hot day? Simply click on our generator to find out what to drink?
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+            <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" id="generateButton">
+                What should I drink today?
+            </button>
+            <div class="generated-content" id="generatedContent"></div>
+        </div>
     </div>
   </div>
 
@@ -67,7 +67,7 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col drink1">
+        <div class="col" id="drink1">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Almond Fig.jpg" alt="Almond Fig">
             <div class="card-body">
@@ -76,15 +76,15 @@
               <p class="card-text">Almond fig tea is brewed to combat sore throat and relieve phlegm and congestion so you can continue to work comfortably.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink2">
+        <div class="col" id="drink2">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/American Ginseng.jpg" alt="American Ginseng">
             <div class="card-body">
@@ -93,15 +93,13 @@
               <p class="card-text">In modern times, ginseng has been widely recognised as an adaptogen, and helps to increase resistance to stress and restore homeostasis.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink3">
+        <div class="col" id="drink3">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Antelope Cooling Water.jpg" alt="Antelope Cooling Water">
             <div class="card-body">
@@ -110,16 +108,16 @@
               <p class="card-text">Its salty and cold properties give the ingredient its cooling effect, ability to improve vision, and ability to calm and clear the mind.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Non Vegan</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink4">
+        <div class="col" id="drink4">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Ba Bao Tea.jpg" alt="Ba Bao Tea">
             <div class="card-body">
@@ -128,15 +126,15 @@
               <p class="card-text">It helps to remove dark under-eye circles, hydrate dry skin, fight fatigue, and can help women maintain a regular menstrual cycle.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink5">
+        <div class="col" id="drink5">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Barley Water.jpg" alt="Barley Drink">
             <div class="card-body">
@@ -145,15 +143,15 @@
               <p class="card-text">Barley water benefits include lowering cholesterol, flush out all the toxins from your body, boosts immunity, and improves overall health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
                 </div>
                 <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink6">
+        <div class="col" id="drink6">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Chamomile tea.jpg" alt="Chamomile Tea">
             <div class="card-body">
@@ -162,16 +160,15 @@
               <p class="card-text">A natural remedy for a wide range of health issues, helps manage diabetes, menstrual pain, and sleep problems, among others.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink7">
+        <div class="col" id="drink7">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Chrysanthemum Tea.jpg" alt="Chrysanthemum Tea">
             <div class="card-body">
@@ -180,15 +177,14 @@
               <p class="card-text">Helps to lower blood pressure, cool the body, reduce inflammation, help to induce calmness, help your body better regulate itself and eliminate unnecessary stress hormones in the blood.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink 8">
+        <div class="col" id="drink8">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Five Flower Tea.jpg" alt="Five Flower Tea">
             <div class="card-body">
@@ -197,15 +193,15 @@
               <p class="card-text">With rich antioxidative and anti-inflammatory properties, it clears liver heat to improve blurry vision, soothe bloodshot eyes, alleviate dizziness, and relieve vexation or feelings of irritability.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink9">
+        <div class="col" id="drink9">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Ge Gen.jpg" alt="Ge Gen">
             <div class="card-body">
@@ -214,16 +210,16 @@
               <p class="card-text">A traditional Chinese medicinal herb to dispel heat, raise the spleen yang and generate fluids. It may support digestion, benefit menopause and may help with alcohol dependence.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink10">
+        <div class="col" id="drink10">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Ginger Tea.jpg" alt="Ginger Tea">
             <div class="card-body">
@@ -232,15 +228,14 @@
               <p class="card-text">Individuals with cold body constitution, especially women with menstrual cramps problems. Help manage blood pressure and support heart health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink11">
+        <div class="col" id="drink11">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Ginseng Chry Tea.png" alt="Ginseng Chrysanthemum Tea">
             <div class="card-body">
@@ -249,15 +244,14 @@
               <p class="card-text">Nourishes yin, clears heat, quenches thirst, provides energy, particularly great for office workers who spend long hours at a computer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink12">
+        <div class="col" id="drink12">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Honey Aloe Vera.jpg" alt="Honey Aloe Vera">
             <div class="card-body">
@@ -266,16 +260,15 @@
               <p class="card-text">Helps to boost our overall immunity. Both honey and aloe vera contain powerful and potent antioxidants that are high in quality.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink13">
+        <div class="col" id="drink13">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Honey Lemon Water.png" alt="Honey Lemon Water">
             <div class="card-body">
@@ -284,15 +277,14 @@
               <p class="card-text">Helps improve digestion, boost immunity, aid in weight loss, and promote clear skin. A storehouse of antioxidants and have antibacterial traits, that helps combat diseases and improve overall health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink14">
+        <div class="col" id="drink14">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Honey Grass Wheat.jpg" alt="Honey Wheat Grass">
             <div class="card-body">
@@ -301,15 +293,14 @@
               <p class="card-text">Wheatgrass has been associated with many health benefits, including weight loss, decreased inflammation, lower cholesterol and better blood sugar control.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink15">
+        <div class="col" id="drink15">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Honeysuckle.jpg" alt="Honeysuckle Flower Tea">
             <div class="card-body">
@@ -318,16 +309,15 @@
               <p class="card-text">It's cooling properties help it to clear inflammatory and infectious conditions, or “internal heat”. Honeysuckle also replenishes Qi, the energy source within the body.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink16">
+        <div class="col" id="drink16">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Lemon Balm Tea.jpg" alt="Lemon Balm Tea">
             <div class="card-body">
@@ -336,15 +326,14 @@
               <p class="card-text">It helps improve mood, slow cognitive decline, and decrease anxiety levels. Help with insomnia, relieve menstrual pain, and support gastrointestinal health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink17">
+        <div class="col" id="drink17">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Luo Han Guo.jpg" alt="Luo Han Guo">
             <div class="card-body">
@@ -353,15 +342,14 @@
               <p class="card-text">Improve sore throat, cough, sputum, hoarseness, and dryness of the throat, while also promoting gastrointestinal function recovery.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink18">
+        <div class="col" id="drink18">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Peppermint.jpg" alt="Peppermint Tea">
             <div class="card-body">
@@ -370,16 +358,14 @@
               <p class="card-text">Peppermint tea is well-known for its digestive effects as some people, anecdotally, find it can help relieve symptoms such as gas and bloating.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink19">
+        <div class="col" id="drink19">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Prunella.jpg" alt="Prunella">
             <div class="card-body">
@@ -388,15 +374,15 @@
               <p class="card-text">Prunella is taken internally as a herbal tea in the treatment of fevers, diarrhea, sore mouth and throat, and weaknesses of the liver and heart.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink20">
+        <div class="col" id="drink20">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Rashberry Leaf.jpg" alt="Raspberry Leaf Tea">
             <div class="card-body">
@@ -405,33 +391,32 @@
               <p class="card-text">Raspberry Leaf alleviates inflammatory conditions, relieves morning sickness, supports healthy menstruation, and soothes normal menstrual cramps.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink21">
+        <div class="col" id="drink21">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Rosella.jpg" alt="Roselle Hawthorn Tea">
             <div class="card-body">
               <strong>Roselle Hawthorn Tea 洛神花山楂茶</strong>
               <br>
               <p class="card-text">Aid digestion, promote anti-aging, and disperse blood stasis and thereby relieving period cramps and regulating the menstrual cycle.</p>
-              <div class="d-flex justify-content-between align-items-center">>
+              <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col drink 22">
+        <div class="col" id="drink 22">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Shi Huo.jpg" alt="Shi Huo">
             <div class="card-body">
@@ -440,15 +425,14 @@
               <p class="card-text">It enriches Yin, generates fluids in the body, and strengthens the stomach and is primarily used to reduce internal heat.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink23">
+        <div class="col" id="drink23">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Waterchestnut Sugarcane.jpg" alt="Water Chestnut Drink">
             <div class="card-body">
@@ -457,15 +441,14 @@
               <p class="card-text">A traditional Chinese drink which helps cool the body, reduce heatiness, and clear phlegm and unwanted body fluids, perfect for hot summer days.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col drink24">
+        <div class="col" id="drink24">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Winter melon.jpg" alt="Winter Melon Tea">
             <div class="card-body">
@@ -474,10 +457,9 @@
               <p class="card-text">Known for its cooling effect, helps reduce body heat and aid digestion after heavy meals. An ideal drink for hot summer days.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
@@ -495,7 +477,7 @@
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-1">Disclaimer. The information on the SipHerbs is for general informational purposes only and is provided in good faith. We do not guarantee its accuracy, completeness, or reliability. This content is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your physician or other qualified health providers with any medical questions.</p>
   </div>
 </footer>
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
