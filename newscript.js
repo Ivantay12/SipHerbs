@@ -25,3 +25,29 @@ document.getElementById('generateButton').addEventListener('click', function() {
     content.innerHTML = `<b>${randomDrink}</b>`;
     content.style.display = 'block';
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('All').addEventListener('click', () => {
+      filterTeas('');
+    });
+    // By default, show all teas
+    filterTeas('');
+  });
+
+  function filterTeas(filter) {
+    const allTeas = document.querySelectorAll('.col');
+    allTeas.forEach(tea => {
+      if (!filter) {
+        tea.style.display = 'block';
+      } else {
+        const buttons = tea.querySelectorAll('button');
+        let shouldDisplay = false;
+        buttons.forEach(button => {
+          if (button.id === filter) {
+            shouldDisplay = true;
+          }
+        });
+        tea.style.display = shouldDisplay ? 'block' : 'none';
+      }
+    });
+  }

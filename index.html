@@ -20,24 +20,24 @@
   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis">SipHerbs</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Sip your way to wellness. Effortlessly discover the perfect herbal tea to match your needs, leading to improved health and a delightful tea-drinking experience.</p>
+      <p class="lead mb-2">Sip your way to wellness. Effortlessly discover the perfect traditional herbal tea or "liang teh" to match your needs, leading to improved health and a delightful tea-drinking experience.</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 50vh;">
       <div class="container px-5">
-        <img src="./Image/Herbal Tea.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        <img src="./Image/Herbal Tea.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="herbal tea" width="700" height="500" loading="lazy">
       </div>
     </div>
   </div>
   
   <div class="generator">
-    <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <div class="py-5 text-center bg-body-tertiary rounded-3">
         <h1 class="fw">Alamak! Spoilt for choice?</h1>
         <p class="col-lg-8 mx-auto fs-5 text-muted">
             Just want to quench your taste during a hot day? Simply click on our generator to find out what to drink?
         </p>
-        <div class="d-inline-flex gap-2 mb-5">
+        <div class="d-inline-flex gap-2 mb-3">
             <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" id="generateButton">
                 What should I drink today?
             </button>
@@ -46,18 +46,18 @@
     </div>
   </div>
 
-  <section class="py-5 text-center container">
+  <section class="py-2 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw">Herbal Tea To Your Aid</h1>
-        <p class="lead text-body-secondary">Understand specific benefits of various herbal teas and provide you tailored suggestions based on your current health conditions and preferences.</p>
+        <p class="lead text-body-secondary">Understand specific benefits of various traditional herbal teas and provide you tailored suggestions based on your current health conditions and preferences.</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">All</a>
-          <a href="#" class="btn btn-secondary my-2">Boost Me</a>
-          <a href="#" class="btn btn-secondary my-2">Detox Me</a>
-          <a href="#" class="btn btn-secondary my-2">Feeling Heaty</a>
-          <a href="#" class="btn btn-secondary my-2">Cough Cough</a>
-          <a href="#" class="btn btn-secondary my-2">For Ladies</a>
+          <button type="button" class="btn btn-primary mx-0.5" id="All">All</button>
+          <button type="button" onclick="filterTeas('BoostMe1')" class="btn btn-secondary mx-0.5" id="BoostMe">Boost Me</button>
+          <button type="button" onclick="filterTeas('DetoxMe1')" class="btn btn-secondary mx-0.5" id="DetoxMe">Detox Me</button>
+          <button type="button" onclick="filterTeas('FeelingHeaty1')" class="btn btn-secondary mx-0.5" id="FeelingHeaty">Feeling Heaty</button>
+          <button type="button" onclick="filterTeas('CoughCough1')" class="btn btn-secondary mx-0.5" id="CoughCough">Cough Cough</button>
+          <button type="button" onclick="filterTeas('ForLadies1')" class="btn btn-secondary mx-0.5" id="ForLadies">For Ladies</button>
         </p>
       </div>
     </div>
@@ -68,7 +68,7 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" id="drink1">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm" height="100%">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./Image/Almond Fig.jpg" alt="Almond Fig">
             <div class="card-body">
               <strong>Almond Figs Tea 川贝杏仁茶</strong>
@@ -76,9 +76,9 @@
               <p class="card-text">Almond fig tea is brewed to combat sore throat and relieve phlegm and congestion so you can continue to work comfortably.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
               <p class="card-text">In modern times, ginseng has been widely recognised as an adaptogen, and helps to increase resistance to stress and restore homeostasis.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
                 </div>
               </div>
             </div>
@@ -108,8 +108,8 @@
               <p class="card-text">Its salty and cold properties give the ingredient its cooling effect, ability to improve vision, and ability to calm and clear the mind.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
                 </div>
                 <small class="text-body-secondary">Non Vegan</small>
               </div>
@@ -126,9 +126,9 @@
               <p class="card-text">It helps to remove dark under-eye circles, hydrate dry skin, fight fatigue, and can help women maintain a regular menstrual cycle.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -143,10 +143,9 @@
               <p class="card-text">Barley water benefits include lowering cholesterol, flush out all the toxins from your body, boosts immunity, and improves overall health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
@@ -160,8 +159,8 @@
               <p class="card-text">A natural remedy for a wide range of health issues, helps manage diabetes, menstrual pain, and sleep problems, among others.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -177,8 +176,8 @@
               <p class="card-text">Helps to lower blood pressure, cool the body, reduce inflammation, help to induce calmness, help your body better regulate itself and eliminate unnecessary stress hormones in the blood.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
                 </div>
               </div>
             </div>
@@ -193,9 +192,9 @@
               <p class="card-text">With rich antioxidative and anti-inflammatory properties, it clears liver heat to improve blurry vision, soothe bloodshot eyes, alleviate dizziness, and relieve vexation or feelings of irritability.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -210,9 +209,9 @@
               <p class="card-text">A traditional Chinese medicinal herb to dispel heat, raise the spleen yang and generate fluids. It may support digestion, benefit menopause and may help with alcohol dependence.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -228,8 +227,8 @@
               <p class="card-text">Individuals with cold body constitution, especially women with menstrual cramps problems. Help manage blood pressure and support heart health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -244,8 +243,8 @@
               <p class="card-text">Nourishes yin, clears heat, quenches thirst, provides energy, particularly great for office workers who spend long hours at a computer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
                 </div>
               </div>
             </div>
@@ -260,8 +259,8 @@
               <p class="card-text">Helps to boost our overall immunity. Both honey and aloe vera contain powerful and potent antioxidants that are high in quality.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -277,8 +276,8 @@
               <p class="card-text">Helps improve digestion, boost immunity, aid in weight loss, and promote clear skin. A storehouse of antioxidants and have antibacterial traits, that helps combat diseases and improve overall health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -293,8 +292,8 @@
               <p class="card-text">Wheatgrass has been associated with many health benefits, including weight loss, decreased inflammation, lower cholesterol and better blood sugar control.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Detox Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="DetoxMe1">Detox Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -309,8 +308,8 @@
               <p class="card-text">It's cooling properties help it to clear inflammatory and infectious conditions, or “internal heat”. Honeysuckle also replenishes Qi, the energy source within the body.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -326,8 +325,8 @@
               <p class="card-text">It helps improve mood, slow cognitive decline, and decrease anxiety levels. Help with insomnia, relieve menstrual pain, and support gastrointestinal health.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -342,8 +341,8 @@
               <p class="card-text">Improve sore throat, cough, sputum, hoarseness, and dryness of the throat, while also promoting gastrointestinal function recovery.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -358,7 +357,7 @@
               <p class="card-text">Peppermint tea is well-known for its digestive effects as some people, anecdotally, find it can help relieve symptoms such as gas and bloating.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
                 </div>
               </div>
             </div>
@@ -374,9 +373,9 @@
               <p class="card-text">Prunella is taken internally as a herbal tea in the treatment of fevers, diarrhea, sore mouth and throat, and weaknesses of the liver and heart.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -391,8 +390,8 @@
               <p class="card-text">Raspberry Leaf alleviates inflammatory conditions, relieves morning sickness, supports healthy menstruation, and soothes normal menstrual cramps.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
 
               </div>
@@ -408,8 +407,8 @@
               <p class="card-text">Aid digestion, promote anti-aging, and disperse blood stasis and thereby relieving period cramps and regulating the menstrual cycle.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">For Ladies</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="ForLadies1">For Ladies</button>
                 </div>
               </div>
             </div>
@@ -425,8 +424,8 @@
               <p class="card-text">It enriches Yin, generates fluids in the body, and strengthens the stomach and is primarily used to reduce internal heat.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
                 </div>
               </div>
             </div>
@@ -441,8 +440,8 @@
               <p class="card-text">A traditional Chinese drink which helps cool the body, reduce heatiness, and clear phlegm and unwanted body fluids, perfect for hot summer days.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Cough Cough</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="CoughCough1">Cough Cough</button>
                 </div>
               </div>
             </div>
@@ -457,8 +456,8 @@
               <p class="card-text">Known for its cooling effect, helps reduce body heat and aid digestion after heavy meals. An ideal drink for hot summer days.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Boost Me</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Feeling Heaty</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="BoostMe1">Boost Me</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="FeelingHeaty1">Feeling Heaty</button>
                 </div>
               </div>
             </div>
@@ -474,10 +473,10 @@
 
 <footer class="text-body-secondary py-5">
   <div class="container">
-    <p class="float-end mb-1">
+    <p class="float-end mb-20">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Disclaimer. The information on the SipHerbs is for general informational purposes only and is provided in good faith. We do not guarantee its accuracy, completeness, or reliability. This content is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your physician or other qualified health providers with any medical questions.</p>
+    <p class="mb-1">Disclaimer. This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website. This content is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your physician or other qualified health providers with any medical questions.</p>
   </div>
 </footer>
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
